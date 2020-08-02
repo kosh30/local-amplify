@@ -15,8 +15,10 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
+    "@aws-amplify/analytics": "^3.2.5",
     "@aws-amplify/auth": "^3.3.3",
     "@aws-amplify/core": "^3.4.4",
-    "@aws-amplify/datastore": "^2.2.8"
+    "@aws-amplify/datastore": "^2.2.8",
+    "lodash": "^4.17.19"
   }
 }
