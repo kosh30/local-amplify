@@ -1,6 +1,6 @@
 {
   "name": "local_amplify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "module": "dist/index.js",
   "scripts": {
     "build": "webpack"
@@ -10,6 +10,7 @@
   "license": "ISC",
   "private": true,
   "devDependencies": {
+    "@aws-amplify/storage": "^3.2.13",
     "@purtuga/esm-webpack-plugin": "^1.2.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"

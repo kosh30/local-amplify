@@ -3,6 +3,7 @@ import { Auth, CognitoUser, CookieStorage, CognitoHostedUIIdentityProvider, appe
 import { DataStore, initSchema, Predicates } from "@aws-amplify/datastore/lib-esm"
 import { API, graphqlOperation } from "@aws-amplify/api/lib-esm"
 import { Analytics, AWSPinpointProvider, AmazonPersonalizeProvider, AWSKinesisFirehoseProvider, AWSKinesisProvider } from "@aws-amplify/analytics/lib-esm"
+import { Storage, StorageProvider } from "@aws-amplify/storage/lib-esm"
 
 export {
   Amplify,
