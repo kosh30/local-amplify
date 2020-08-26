@@ -1,4 +1,4 @@
-import { Amplify, ConsoleLogger } from "@aws-amplify/core/lib-esm"
+import { Amplify, ConsoleLogger, Platform, Credentials } from "@aws-amplify/core/lib-esm"
 import { Auth, CognitoUser, CookieStorage, CognitoHostedUIIdentityProvider, appendToCognitoUserAgent } from "@aws-amplify/auth/lib-esm"
 import { DataStore, initSchema, Predicates } from "@aws-amplify/datastore/lib-esm"
 import { API, graphqlOperation } from "@aws-amplify/api/lib-esm"
@@ -6,7 +6,7 @@ import { Analytics, AWSPinpointProvider, AmazonPersonalizeProvider, AWSKinesisFi
 import { Storage, StorageProvider } from "@aws-amplify/storage/lib-esm"
 
 export {
-  Amplify, ConsoleLogger,
+  Amplify, ConsoleLogger, Platform, Credentials,
   Auth, CognitoUser, CookieStorage, CognitoHostedUIIdentityProvider, appendToCognitoUserAgent,
   DataStore, initSchema, Predicates,
   API, graphqlOperation,
