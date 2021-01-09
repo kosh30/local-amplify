@@ -1,18 +1,26 @@
 var path = require('path');
-const EsmWebpackPlugin = require("@purtuga/esm-webpack-plugin");
 
 module.exports = {
     mode: 'production',
     entry: './index.js',
+    resolve: { extensions: ['.wasm', '.mjs', '.js', '.jsx', '.json'] },
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'index.js',
         libraryTarget: "var",
         library: "local_amplify"
     },
-    plugins: [
-        new EsmWebpackPlugin()
-    ],
+    module: {
+        rules: [
+            {
+                test: /\.m?js/,
+                resolve: {
+                    fullySpecified: false
+                }
+            },
+        ]
+    },
+    plugins: [],
     optimization: {
         minimize: true,
     }

@@ -1,6 +1,6 @@
 {
   "name": "local_amplify",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "module": "dist/index.js",
   "scripts": {
     "build": "webpack"
@@ -10,16 +10,16 @@
   "license": "ISC",
   "private": true,
   "devDependencies": {
-    "@aws-amplify/storage": "^3.2.13",
-    "@purtuga/esm-webpack-plugin": "^1.2.1",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
+    "webpack": "^5.12.2",
+    "webpack-cli": "^4.3.1"
   },
   "dependencies": {
-    "@aws-amplify/analytics": "^3.2.7",
+    "@aws-amplify/analytics": "^4.0.5",
+    "@aws-amplify/api": "^3.2.17",
     "@aws-amplify/auth": "^3.3.5",
     "@aws-amplify/core": "^3.4.6",
     "@aws-amplify/datastore": "^2.2.10",
+    "@aws-amplify/storage": "^3.2.13",
     "lodash": "^4.17.19"
   }
 }
